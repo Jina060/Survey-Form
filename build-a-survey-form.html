@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+
+    <style> 
+            body {
+  background-image: url("https://media.istockphoto.com/id/1323851976/photo/classmates-are-learning-through-laptop.jpg?s=612x612&w=0&k=20&c=Np1osLGMa-b1jKLvrpteJBO9vinhkSHkRVgg-7VAOAk=");
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  background-attachment: fixed;
+  background-color: rgba(52, 82 205, 0.5);
+  font-family: Tahoma;
+  font-size: 20px;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+  color: rgb(52, 82, 205);
+}
+
+form {
+  width: 70vw;
+  max-width:750px;
+  min-width: 300px;
+  margin: auto;
+  padding: 0 2em;
+  background-color:rgba(82, 107, 179, 0.9);
+  padding-bottom: 15px;
+}
+
+fieldset{
+  border: none;
+  padding: 10px 0;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0;
+}
+
+input, textarea, select {
+  margin: 10px, 0, 0, 0;
+  width: 100%;
+  min-height: 3em;
+  margin-top: 10px;
+}
+
+input, textarea {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.choice {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+display: block;
+width: 100%;
+margin-bottom: 10px;
+height: 0.5em;
+font-size: 1.1rem;
+background-color: green;
+min-width: 300px;
+}
+
+
+
+
+
+    </style>
+
+    
+      </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+
+    <form id="survey-form" method="post"action="https://register-demo.freecode.org">
+
+    <fieldset>
+      <label id="name-label" for="name">Name <input id="name" type="text"  placeholder="Enter your name" required/></label>
+
+      <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+      
+      <label id="number-label" for="number">Age <span>(optional)</span> <input id="number" type="number" min="18" max="60" placeholder="Age" required/></label>
+      
+      <label>Which option describes your current role?
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+
+        </select>
+      </label>
+      
+      <label>Would you recommend freeCodeCamp to a friend?
+   
+   <label><input type="radio" name="tick" class="choice" value="circle"> Definitely
+      </label>
+
+      <label><input type="radio" name="tick" class="choice" value="circle"> Maybe
+      </label>
+
+      <label><input type="radio" name="tick" class="choice" value="circle"> Not sure
+      </label>
+</fieldset>
+
+    <fieldset>
+      <label>What is your favorite feature of freeCodeCamp?
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+
+        </select>
+      </label>
+
+      <label>What would like to see improves? <span>(check all that apply)</span>
+      <label><input value="check" type="checkbox" class="choice"> Front-end Projects</label>
+      <label><input value="check" type="checkbox" class="choice"> Back-end Projects</label>
+      <label><input value="check" type="checkbox" class="choice"> Data visualization</label>
+      <label><input value="check" type="checkbox" class="choice"> Challenges</label>
+      <label><input value="check" type="checkbox" class="choice"> Open Source Community</label>
+      <label><input value="check" type="checkbox" class="choice"> Gitter help rooms</label>
+      <label><input value="check" type="checkbox" class="choice"> vIdeos</label>
+      <label><input value="check" type="checkbox" class="choice"> City Meetups</label>
+      <label><input value="check" type="checkbox" class="choice"> Wiki</label>
+      <label><input value="check" type="checkbox" class="choice"> Forum</label>
+      <label><input value="check" type="checkbox" class="choice"> Additional Courses</label>
+
+</label>
+    </fieldset>
+
+    <fieldset>
+<label>
+  Any comments or suggestion?
+  <textarea placeholder="Enter your comment here..." id="comments" rows="6" cols="30"></textarea>
+</label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+
